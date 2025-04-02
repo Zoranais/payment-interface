@@ -114,11 +114,11 @@ export const DesktopTitle = styled.div`
 `;
 
 export const Section = styled.div`
-    width: 420px;
+    width: calc(100% - 32px);
     padding: 0 16px;
+    max-width: 420px;
 
     @media screen and (min-width: 1000px) {
-        max-width: 420px;
-        width: calc(50%-32px);
+        width: 420px;
     }
 `;
