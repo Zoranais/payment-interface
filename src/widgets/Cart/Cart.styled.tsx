@@ -4,10 +4,7 @@ export const CartContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    margin: 0 16px;
-
-    max-width: 420px;
-    width: calc(100% - 32px);
+    width: 100%;
 
     background-color: hsla(240, 14%, 97%, 1);
     border-radius: 8px;
@@ -15,6 +12,10 @@ export const CartContainer = styled.div`
 
 export const CartContent = styled.div`
     padding: 12px 16px;
+
+    @media screen and (min-width: 1000px) {
+        padding: 32px 40px;
+    }
 `;
 
 export const CartTitle = styled.h2`

@@ -4,10 +4,7 @@ export const PaymentFormContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    padding: 0 16px;
-
-    max-width: 420px;
-    width: calc(100% - 32x);
+    width: 100%;
 `;
 
 export const FormHeading = styled.div`

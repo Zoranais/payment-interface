@@ -44,6 +44,10 @@ export const HeaderContainer = styled.div`
 
     width: calc(100% - 32px);
 
+    @media screen and (min-width: 1000px) {
+        max-width: 862px;
+    }
+
     padding: 16px;
 `;
 
@@ -95,16 +99,26 @@ export const DesktopTitle = styled.div`
     align-items: center;
 
     position: relative;
-    padding: 0 16px 16px 16px;
+    padding: 0 0 16px 0;
 
     ${BackButton} {
         position: absolute;
-        left: -24px;
+        left: -40px;
 
         color: black;
     }
 
     ${HeaderTitle} {
         line-height: 40px;
+    }
+`;
+
+export const Section = styled.div`
+    width: 420px;
+    padding: 0 16px;
+
+    @media screen and (min-width: 1000px) {
+        max-width: 420px;
+        width: calc(50%-32px);
     }
 `;

@@ -5,7 +5,7 @@ import useApplePayPayMutation from "./hooks/useApplePayPayMutation";
 import usePayMutation from "./hooks/usePayMutation";
 import Footer from "./ui/Footer";
 import Header from "./ui/Header";
-import { BackButton, DesktopTitle, HeaderTitle, PaymentPageContainer, PaymentPageContent } from "./ui/styled";
+import { BackButton, DesktopTitle, HeaderTitle, PaymentPageContainer, PaymentPageContent, Section } from "./ui/styled";
 import useIsMobile from "../../shared/hooks/useIsMobile";
 
 const items = [
@@ -23,7 +23,7 @@ const PaymentPage = () => {
         <PaymentPageContainer>
             <Header />
             <PaymentPageContent>
-                <div>
+                <Section>
                     {!isMobile && (
                         <DesktopTitle>
                             <BackButton>
@@ -40,10 +40,10 @@ const PaymentPage = () => {
                         handleApplePayClick={handleApplePay}
                         handleFormSubmit={handlePay}
                     />
-                </div>
-                <div>
+                </Section>
+                <Section>
                     <Cart orderInfo="Order title" description="Order description" currency="UAH" total={299.99} items={items} />
-                </div>
+                </Section>
             </PaymentPageContent>
             <Footer />
         </PaymentPageContainer>
