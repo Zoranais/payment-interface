@@ -1,6 +1,6 @@
 # Payment interface
 
-Adaptive payment page
+Adaptive payment page </br> https://payment-interface-ochre.vercel.app/
 
 ## Launch
 
@@ -23,8 +23,7 @@ Example success cards:
 
 ## Technologies
 
-styled-components
-
+-   styled-components
 -   Tanstack Forms
 -   Framer Motion
 -   Floating UI
