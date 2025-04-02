@@ -23,8 +23,7 @@ Example success cards:
 
 ## Technologies
 
-styled-components
-
+-   styled-components
 -   Tanstack Forms
 -   Framer Motion
 -   Floating UI
