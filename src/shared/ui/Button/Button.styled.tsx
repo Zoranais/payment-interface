@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "motion/react";
 
 const variants = {
     primary: (isMobile?: boolean) => {
@@ -56,6 +55,24 @@ export const ButtonStyled = styled.button<{ isMobile: boolean; loading: boolean;
 
     padding: 0 26px;
 
+    .motion-content {
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+
+        width: 100%;
+        height: 100%;
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: hsl(0 0 100);
+    }
+
     background-color: ${(props) =>
         props.loading
             ? variants[props.variant ?? "primary"](props.isMobile).color.loading
@@ -79,22 +96,4 @@ export const ButtonStyled = styled.button<{ isMobile: boolean; loading: boolean;
             transform: translateY(${variants[props.variant ?? "primary"](props.isMobile).offset.pressed}px);
         }
         `};
-`;
-
-export const ButtonContent = styled(motion.span)`
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 12px;
-
-    width: 100%;
-    height: 100%;
-
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: hsl(0 0 100);
 `;
